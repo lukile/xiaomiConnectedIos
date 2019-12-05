@@ -14,6 +14,9 @@
 		1DBB7028239913E300203CB9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB7026239913E300203CB9 /* MenuViewController.swift */; };
 		1DBB7029239913E300203CB9 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBB7027239913E300203CB9 /* MenuViewController.xib */; };
 		1DBB702B239918A400203CB9 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB702A239918A400203CB9 /* Menu.swift */; };
+		1DBB702F239995E800203CB9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB702E239995E800203CB9 /* MenuCollectionViewCell.swift */; };
+		1DBB703523999DBC00203CB9 /* UIIMageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB703423999DBC00203CB9 /* UIIMageView.swift */; };
+		1DBB703723999E2100203CB9 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB703623999E2100203CB9 /* MenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		1DBB7026239913E300203CB9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1DBB7027239913E300203CB9 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		1DBB702A239918A400203CB9 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		1DBB702E239995E800203CB9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		1DBB703423999DBC00203CB9 /* UIIMageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIMageView.swift; sourceTree = "<group>"; };
+		1DBB703623999E2100203CB9 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 		1DBB70122399136A00203CB9 /* XiaomiConnectedIosApp */ = {
 			isa = PBXGroup;
 			children = (
+				1DBB703323999DAC00203CB9 /* extension */,
+				1DBB7030239997CC00203CB9 /* Model */,
+				1DBB702D239995CA00203CB9 /* CollectionViewCell */,
 				1DBB702C239959CC00203CB9 /* CardiacFrequency */,
 				1DBB7025239913BA00203CB9 /* Menu */,
 				1DBB70132399136A00203CB9 /* AppDelegate.swift */,
@@ -74,7 +83,6 @@
 			children = (
 				1DBB7026239913E300203CB9 /* MenuViewController.swift */,
 				1DBB7027239913E300203CB9 /* MenuViewController.xib */,
-				1DBB702A239918A400203CB9 /* Menu.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -84,6 +92,31 @@
 			children = (
 			);
 			path = CardiacFrequency;
+			sourceTree = "<group>";
+		};
+		1DBB702D239995CA00203CB9 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1DBB702E239995E800203CB9 /* MenuCollectionViewCell.swift */,
+				1DBB703623999E2100203CB9 /* MenuTableViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		1DBB7030239997CC00203CB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DBB702A239918A400203CB9 /* Menu.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DBB703323999DAC00203CB9 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				1DBB703423999DBC00203CB9 /* UIIMageView.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +192,11 @@
 			files = (
 				1DBB70162399136A00203CB9 /* ViewController.swift in Sources */,
 				1DBB7028239913E300203CB9 /* MenuViewController.swift in Sources */,
+				1DBB703723999E2100203CB9 /* MenuTableViewCell.swift in Sources */,
+				1DBB703523999DBC00203CB9 /* UIIMageView.swift in Sources */,
 				1DBB702B239918A400203CB9 /* Menu.swift in Sources */,
 				1DBB70142399136A00203CB9 /* AppDelegate.swift in Sources */,
+				1DBB702F239995E800203CB9 /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

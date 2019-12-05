@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="XiaomiConnectedIosApp" customModuleProvider="target">
             <connections>
-                <outlet property="menuTableView" destination="bq1-Ys-h3f" id="btW-xo-NDt"/>
+                <outlet property="label" destination="sqS-Nc-Yg4" id="IZJ-tA-QMg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,25 +30,16 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="sport" translatesAutoresizingMaskIntoConstraints="NO" id="m2K-og-c8P">
                     <rect key="frame" x="0.0" y="418" width="375" height="249"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bq1-Ys-h3f">
-                    <rect key="frame" x="0.0" y="91" width="375" height="576"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </tableView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="m2K-og-c8P" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="6KU-t9-yWg"/>
-                <constraint firstItem="bq1-Ys-h3f" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6ke-96-rvw"/>
                 <constraint firstItem="m2K-og-c8P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7yF-0E-naZ"/>
-                <constraint firstItem="bq1-Ys-h3f" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="27" id="9ef-CK-2ml"/>
                 <constraint firstItem="sqS-Nc-Yg4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="112" id="Hwz-vi-ukZ"/>
-                <constraint firstItem="bq1-Ys-h3f" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Jw2-ea-l4o"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sqS-Nc-Yg4" secondAttribute="trailing" constant="112" id="LEc-0Z-BHP"/>
                 <constraint firstItem="m2K-og-c8P" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Rd2-aH-Wdu"/>
                 <constraint firstItem="m2K-og-c8P" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="354" id="WMh-gC-2Je"/>
-                <constraint firstItem="bq1-Ys-h3f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WRA-aK-yT7"/>
                 <constraint firstItem="sqS-Nc-Yg4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Zyh-pI-Pzf"/>
-                <constraint firstItem="bq1-Ys-h3f" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="27" id="m9B-6R-YrC"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>

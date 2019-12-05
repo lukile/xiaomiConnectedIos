@@ -9,79 +9,135 @@
 import UIKit
 
 class MenuViewController: UIViewController {
+    var collectionView: UICollectionView!
+    
+    @IBOutlet var label: UILabel!
+    
+    
+    var screensize = CGRect()
 
-    @IBOutlet var menuTableView: UITableView!
-    
-    var maxHeight: CGFloat = UIScreen.main.bounds.size.height
-    
     var menu: [Menu] = [Menu]()
     
-    var size = CGSize(width: 50, height: 40)
+    var feedbackGenerator : UISelectionFeedbackGenerator? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        createMenuArray()
-        self.menuTableView.delegate = self
+       
+
         
-        self.menuTableView.dataSource = self
-   
+        createMenuArray()
+
+        let flowLayout = UICollectionViewFlowLayout()
+        
+        collectionView = UICollectionView(frame: screensize, collectionViewLayout: flowLayout)
+        collectionView.delegate = self
+        
+        collectionView.dataSource = self
+        
+        collectionView.showsVerticalScrollIndicator = false
+        
+        collectionView.alwaysBounceVertical = true
+        
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        
+        collectionView.register(MenuCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+
+        collectionView.backgroundColor = .clear
+        
+        view.addSubview(collectionView)
+        
+        
+        collectionView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
+        collectionView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor).isActive = true
+        collectionView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
 
     
     
     func createMenuArray() {
-        menu.append(Menu(featureName: "Cardiac frequency", featureImage: UIImage(named: "heartbeat")  ?? UIImage(named: "default")!))
-        menu.append(Menu(featureName: "Pedometer", featureImage: UIImage(named: "foot") ?? UIImage(named: "default")!))
-        menu.append(Menu(featureName: "Battery life", featureImage: UIImage(named: "batteryLife") ?? UIImage(named: "default")!))
-        menu.append(Menu(featureName: "Accelerometer datas", featureImage: UIImage(named: "accelerometer") ?? UIImage(named: "default")!))
-        menu.append(Menu(featureName: "Calorie tracking", featureImage: UIImage(named: "calorie") ?? UIImage(named: "default")!))
- 
-       
+        menu.append(Menu(name: "Cardiac frequency", image: UIImage(named: "heartbeat")  ?? UIImage(named: "default")!))
+        menu.append(Menu(name: "Pedometer", image: UIImage(named: "foot") ?? UIImage(named: "default")!))
+        menu.append(Menu(name: "Battery life", image: UIImage(named: "batteryLife") ?? UIImage(named: "default")!))
+        menu.append(Menu(name: "Accelerometer datas", image: UIImage(named: "accelerometer") ?? UIImage(named: "default")!))
+        menu.append(Menu(name: "Calorie tracking", image: UIImage(named: "calorie") ?? UIImage(named: "default")!))
     }
-    
-    func resizeImage(newSize: CGSize, image: UIImage) -> UIImage {
-        guard image.size != newSize else {
-            return image
-        }
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
-        image.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
-        let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        return newImage
-    }
- 
 }
 
-extension MenuViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-        return self.menu.count
+extension MenuViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return menu.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        let item = menu[indexPath.row]
-   
-        cell.textLabel?.text = item.featureName
-        cell.imageView!.image = resizeImage(newSize: size, image: item.featureImage)
-       
-        sizeTableView(menuTableView: self.menuTableView, menu: self.menu)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MenuCollectionViewCell
+        
+        cell.menuCell = menu[indexPath.item]
         
         return cell
     }
-    
-    
 }
 
-func sizeTableView(menuTableView: UITableView, menu: [Menu]) {
-    var height: Int = Int(menuTableView.rowHeight)
-    height *= menu.count
+extension MenuViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //        feedbackGenerator = UISelectionFeedbackGenerator()
+        //
+        //        // Prepare the generator when the gesture begins.
+        //        feedbackGenerator?.prepare()
+        //
+        //        feedbackGenerator?.selectionChanged()
+        //
+        //        // Keep the generator in a prepared state.
+        //        feedbackGenerator?.prepare()
+    }
     
-    var tableFrame: CGRect = menuTableView.frame
-    tableFrame.size.height = CGFloat(height)
-    menuTableView.frame = tableFrame
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        //         feedbackGenerator = nil
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        
+        UIView.animate(withDuration: 0.2, animations: {
+            collectionView.cellForItem(at: indexPath)?.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        }, completion: nil)
+        
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        UIView.animate(withDuration: 0.2, animations: {
+            collectionView.cellForItem(at: indexPath)?.transform = CGAffineTransform.identity
+        }, completion: nil)
+        //        feedbackGenerator = nil
+    }
 }
 
-extension MenuViewController: UITableViewDelegate {
+extension MenuViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let collectionViewWidth = collectionView.bounds.width/3
+        
+        let width = collectionViewWidth - 25
+        
+        return CGSize(width: width, height: width)
+    }
     
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 100, left: 20, bottom: 0, right: 20)
+    }
+    
+    //set Minimum spacing between 2 items
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    //set minimum vertical line spacing here between two lines in collectionview
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 40
+    }
 }
+
+
+
+
