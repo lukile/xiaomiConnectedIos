@@ -58,6 +58,7 @@
 		1DBB70122399136A00203CB9 /* XiaomiConnectedIosApp */ = {
 			isa = PBXGroup;
 			children = (
+				1DBB702C239959CC00203CB9 /* CardiacFrequency */,
 				1DBB7025239913BA00203CB9 /* Menu */,
 				1DBB70132399136A00203CB9 /* AppDelegate.swift */,
 				1DBB70152399136A00203CB9 /* ViewController.swift */,
@@ -76,6 +77,13 @@
 				1DBB702A239918A400203CB9 /* Menu.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		1DBB702C239959CC00203CB9 /* CardiacFrequency */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CardiacFrequency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -22,29 +22,39 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Xiaomi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqS-Nc-Yg4">
-                    <rect key="frame" x="112" y="69" width="151" height="24"/>
+                    <rect key="frame" x="112" y="40" width="151" height="24"/>
                     <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
-                    <color key="textColor" red="0.21195733014465823" green="0.24461294905518227" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="highlightedColor" cocoaTouchSystemColor="lightTextColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bq1-Ys-h3f">
-                    <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="sport" translatesAutoresizingMaskIntoConstraints="NO" id="m2K-og-c8P">
+                    <rect key="frame" x="0.0" y="418" width="375" height="249"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bq1-Ys-h3f">
+                    <rect key="frame" x="0.0" y="91" width="375" height="576"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="0.91724097428716378" green="0.95839120828808566" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bq1-Ys-h3f" secondAttribute="bottom" id="1ny-gS-0im"/>
-                <constraint firstItem="sqS-Nc-Yg4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="49" id="3s7-wx-jqc"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bq1-Ys-h3f" secondAttribute="trailing" id="Bnb-Lh-67q"/>
-                <constraint firstItem="sqS-Nc-Yg4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="112" id="Gsn-J4-wlL"/>
-                <constraint firstItem="bq1-Ys-h3f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Im8-JD-Bnf"/>
-                <constraint firstItem="bq1-Ys-h3f" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="27" id="YsA-aE-aFt"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sqS-Nc-Yg4" secondAttribute="trailing" constant="112" id="jBX-Ol-Rnw"/>
-                <constraint firstItem="bq1-Ys-h3f" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="27" id="jDA-O8-RHZ"/>
+                <constraint firstItem="m2K-og-c8P" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="6KU-t9-yWg"/>
+                <constraint firstItem="bq1-Ys-h3f" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6ke-96-rvw"/>
+                <constraint firstItem="m2K-og-c8P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7yF-0E-naZ"/>
+                <constraint firstItem="bq1-Ys-h3f" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="27" id="9ef-CK-2ml"/>
+                <constraint firstItem="sqS-Nc-Yg4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="112" id="Hwz-vi-ukZ"/>
+                <constraint firstItem="bq1-Ys-h3f" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Jw2-ea-l4o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sqS-Nc-Yg4" secondAttribute="trailing" constant="112" id="LEc-0Z-BHP"/>
+                <constraint firstItem="m2K-og-c8P" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Rd2-aH-Wdu"/>
+                <constraint firstItem="m2K-og-c8P" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="354" id="WMh-gC-2Je"/>
+                <constraint firstItem="bq1-Ys-h3f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WRA-aK-yT7"/>
+                <constraint firstItem="sqS-Nc-Yg4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Zyh-pI-Pzf"/>
+                <constraint firstItem="bq1-Ys-h3f" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="27" id="m9B-6R-YrC"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>
     </objects>
+    <resources>
+        <image name="sport" width="464" height="309"/>
+    </resources>
 </document>
