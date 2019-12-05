@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="XiaomiConnectedIosApp" customModuleProvider="target">
+            <connections>
+                <outlet property="menuTableView" destination="bq1-Ys-h3f" id="btW-xo-NDt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Xiaomi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqS-Nc-Yg4">
+                    <rect key="frame" x="112" y="69" width="151" height="24"/>
+                    <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                    <color key="textColor" red="0.21195733014465823" green="0.24461294905518227" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" cocoaTouchSystemColor="lightTextColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bq1-Ys-h3f">
+                    <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.91724097428716378" green="0.95839120828808566" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bq1-Ys-h3f" secondAttribute="bottom" id="1ny-gS-0im"/>
+                <constraint firstItem="sqS-Nc-Yg4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="49" id="3s7-wx-jqc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bq1-Ys-h3f" secondAttribute="trailing" id="Bnb-Lh-67q"/>
+                <constraint firstItem="sqS-Nc-Yg4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="112" id="Gsn-J4-wlL"/>
+                <constraint firstItem="bq1-Ys-h3f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Im8-JD-Bnf"/>
+                <constraint firstItem="bq1-Ys-h3f" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="27" id="YsA-aE-aFt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sqS-Nc-Yg4" secondAttribute="trailing" constant="112" id="jBX-Ol-Rnw"/>
+                <constraint firstItem="bq1-Ys-h3f" firstAttribute="top" secondItem="sqS-Nc-Yg4" secondAttribute="bottom" constant="27" id="jDA-O8-RHZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
+        </view>
+    </objects>
+</document>
