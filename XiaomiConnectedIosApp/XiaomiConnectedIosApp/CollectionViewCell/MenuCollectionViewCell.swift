@@ -31,7 +31,7 @@ class MenuCollectionViewCell: UICollectionViewCell {
         imageView.clipsToBounds = true
         imageView.backgroundColor = .clear
         imageView.contentMode = .scaleAspectFill
-        //imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         
         
         contentView.addSubview(imageView)
@@ -40,7 +40,7 @@ class MenuCollectionViewCell: UICollectionViewCell {
         imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         imageView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: contentView.bounds.width).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: (contentView.bounds.width/1.5) ).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: contentView.bounds.height - 10).isActive = true
         
     }
     
@@ -58,6 +58,4 @@ class MenuCollectionViewCell: UICollectionViewCell {
         
         imageView.roundCorners([.topRight, .topLeft], radius: 10)
     }
-    
-    
 }

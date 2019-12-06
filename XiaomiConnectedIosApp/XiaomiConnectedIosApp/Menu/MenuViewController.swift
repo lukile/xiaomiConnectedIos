@@ -11,6 +11,8 @@ import UIKit
 class MenuViewController: UIViewController {
     var collectionView: UICollectionView!
     
+    var customizeCollectionView: CustomCollectionView = CustomCollectionView()
+    
     @IBOutlet var label: UILabel!
     
     
@@ -22,45 +24,39 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-
-        
+ 
         createMenuArray()
 
         let flowLayout = UICollectionViewFlowLayout()
-        
+
         collectionView = UICollectionView(frame: screensize, collectionViewLayout: flowLayout)
-        collectionView.delegate = self
-        
-        collectionView.dataSource = self
-        
-        collectionView.showsVerticalScrollIndicator = false
-        
-        collectionView.alwaysBounceVertical = true
-        
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
+
+        customizeCollectionView.customize(collectionView: collectionView)
         
         collectionView.register(MenuCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
-
-        collectionView.backgroundColor = .clear
         
         view.addSubview(collectionView)
         
+        customizeCollectionView.addConstraints(collectionView: collectionView, view: self.view)
         
-        collectionView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
-        collectionView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor).isActive = true
-        collectionView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        collectionView.delegate = self
+        
+        collectionView.dataSource = self
+
+        //collectionView.showsVerticalScrollIndicator = false
+        
+        //collectionView.alwaysBounceVertical = true
+               
     }
 
     
     
     func createMenuArray() {
-        menu.append(Menu(name: "Cardiac frequency", image: UIImage(named: "heartbeat")  ?? UIImage(named: "default")!))
+        menu.append(Menu(name: "Cardiac Frequency", image: UIImage(named: "heartbeat")  ?? UIImage(named: "default")!))
         menu.append(Menu(name: "Pedometer", image: UIImage(named: "foot") ?? UIImage(named: "default")!))
-        menu.append(Menu(name: "Battery life", image: UIImage(named: "batteryLife") ?? UIImage(named: "default")!))
-        menu.append(Menu(name: "Accelerometer datas", image: UIImage(named: "accelerometer") ?? UIImage(named: "default")!))
-        menu.append(Menu(name: "Calorie tracking", image: UIImage(named: "calorie") ?? UIImage(named: "default")!))
+        menu.append(Menu(name: "Battery Life", image: UIImage(named: "batteryLife") ?? UIImage(named: "default")!))
+        menu.append(Menu(name: "Accelerometer Datas", image: UIImage(named: "accelerometer") ?? UIImage(named: "default")!))
+        menu.append(Menu(name: "Calories Tracking", image: UIImage(named: "calorie") ?? UIImage(named: "default")!))
     }
 }
 
@@ -81,35 +77,11 @@ extension MenuViewController: UICollectionViewDataSource {
 
 extension MenuViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //        feedbackGenerator = UISelectionFeedbackGenerator()
-        //
-        //        // Prepare the generator when the gesture begins.
-        //        feedbackGenerator?.prepare()
-        //
-        //        feedbackGenerator?.selectionChanged()
-        //
-        //        // Keep the generator in a prepared state.
-        //        feedbackGenerator?.prepare()
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        //         feedbackGenerator = nil
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        var controllerName: String = (((menu[indexPath.row].featureName)?.replacingOccurrences(of: " ", with: ""))!)
+        controllerName.append("ViewController")
+        let controller: UIViewController = UIViewController(nibName: controllerName, bundle: nil)
         
-        UIView.animate(withDuration: 0.2, animations: {
-            collectionView.cellForItem(at: indexPath)?.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
-        }, completion: nil)
-        
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
-        UIView.animate(withDuration: 0.2, animations: {
-            collectionView.cellForItem(at: indexPath)?.transform = CGAffineTransform.identity
-        }, completion: nil)
-        //        feedbackGenerator = nil
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 
@@ -137,7 +109,6 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         return 40
     }
 }
-
 
 
 
