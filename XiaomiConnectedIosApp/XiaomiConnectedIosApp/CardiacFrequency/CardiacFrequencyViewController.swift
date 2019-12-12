@@ -10,6 +10,12 @@ import UIKit
 
 class CardiacFrequencyViewController: UIViewController {
     
+    var xiaomiService = XiaomiMiBand2Service()
+    
+    @IBAction func synchronize(_ sender: Any) {
+        xiaomiService.synchronizePeripherals()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

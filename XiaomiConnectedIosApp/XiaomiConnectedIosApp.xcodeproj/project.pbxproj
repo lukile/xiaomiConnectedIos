@@ -32,6 +32,8 @@
 		1DBB702F239995E800203CB9 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB702E239995E800203CB9 /* MenuCollectionViewCell.swift */; };
 		1DBB703523999DBC00203CB9 /* UIIMageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB703423999DBC00203CB9 /* UIIMageView.swift */; };
 		1DBB703723999E2100203CB9 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBB703623999E2100203CB9 /* MenuTableViewCell.swift */; };
+		1DD7340523A2AB77005BE373 /* XiaomiMiBand2Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD7340423A2AB77005BE373 /* XiaomiMiBand2Constants.swift */; };
+		1DD7340723A2ACB1005BE373 /* XiaomiMiBand2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD7340623A2ACB1005BE373 /* XiaomiMiBand2Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		1DBB702E239995E800203CB9 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		1DBB703423999DBC00203CB9 /* UIIMageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIMageView.swift; sourceTree = "<group>"; };
 		1DBB703623999E2100203CB9 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		1DD7340423A2AB77005BE373 /* XiaomiMiBand2Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiaomiMiBand2Constants.swift; sourceTree = "<group>"; };
+		1DD7340623A2ACB1005BE373 /* XiaomiMiBand2Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiaomiMiBand2Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		1DBB70122399136A00203CB9 /* XiaomiConnectedIosApp */ = {
 			isa = PBXGroup;
 			children = (
+				1DD7340323A2AB4C005BE373 /* XiaomiMiBand2 */,
 				1D06FD37239A9EA7001C527D /* Calorie */,
 				1D06FD32239A9E78001C527D /* Accelerometer */,
 				1D06FD2D239A9E4F001C527D /* Battery */,
@@ -210,6 +215,15 @@
 				1DBB703423999DBC00203CB9 /* UIIMageView.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		1DD7340323A2AB4C005BE373 /* XiaomiMiBand2 */ = {
+			isa = PBXGroup;
+			children = (
+				1DD7340423A2AB77005BE373 /* XiaomiMiBand2Constants.swift */,
+				1DD7340623A2ACB1005BE373 /* XiaomiMiBand2Service.swift */,
+			);
+			path = XiaomiMiBand2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,12 +306,14 @@
 			files = (
 				1D06FD30239A9E62001C527D /* BatteryLifeViewController.swift in Sources */,
 				1D06FD49239AB6AF001C527D /* ChartViewController.swift in Sources */,
+				1DD7340723A2ACB1005BE373 /* XiaomiMiBand2Service.swift in Sources */,
 				1D06FD35239A9E8E001C527D /* AccelerometerDatasViewController.swift in Sources */,
 				1DBB70162399136A00203CB9 /* ViewController.swift in Sources */,
 				1D06FD4D239AB6C1001C527D /* StatusViewController.swift in Sources */,
 				1DBB7028239913E300203CB9 /* MenuViewController.swift in Sources */,
 				1DBB703723999E2100203CB9 /* MenuTableViewCell.swift in Sources */,
 				1D06FD3E239AA170001C527D /* CustomCollectionView.swift in Sources */,
+				1DD7340523A2AB77005BE373 /* XiaomiMiBand2Constants.swift in Sources */,
 				1D06FD2B239A9E08001C527D /* PedometerViewController.swift in Sources */,
 				1DBB703523999DBC00203CB9 /* UIIMageView.swift in Sources */,
 				1DBB702B239918A400203CB9 /* Menu.swift in Sources */,
