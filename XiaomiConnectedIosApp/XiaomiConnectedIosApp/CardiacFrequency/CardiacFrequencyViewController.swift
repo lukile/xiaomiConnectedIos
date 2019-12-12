@@ -8,10 +8,7 @@
 
 import UIKit
 
-class CardiacFrequencyViewController: UITabBarController {
-    
-    var statusController: StatusViewController!
-    var chartController: ChartViewController!
+class CardiacFrequencyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
