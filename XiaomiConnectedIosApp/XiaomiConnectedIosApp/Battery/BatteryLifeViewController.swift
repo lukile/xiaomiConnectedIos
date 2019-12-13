@@ -7,24 +7,17 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class BatteryLifeViewController: UIViewController {
+    @IBAction func synchronize(_ sender: Any) {
+        xiaomiService.synchronizePeripherals()
+    }
 
+    lazy var xiaomiService = XiaomiMiBand2Service()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        _ = xiaomiService
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

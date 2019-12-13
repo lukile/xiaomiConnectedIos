@@ -9,8 +9,7 @@
 import UIKit
 
 class CardiacFrequencyViewController: UIViewController {
-    
-    var xiaomiService = XiaomiMiBand2Service()
+    lazy var xiaomiService = XiaomiMiBand2Service()
     
     @IBAction func synchronize(_ sender: Any) {
         xiaomiService.synchronizePeripherals()

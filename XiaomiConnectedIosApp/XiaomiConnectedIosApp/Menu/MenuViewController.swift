@@ -9,6 +9,9 @@
 import UIKit
 
 class MenuViewController: UIViewController {
+    let multipeerService = MultipeerService()
+    
+    
     var collectionView: UICollectionView!
     
     var customizeCollectionView: CustomCollectionView = CustomCollectionView()

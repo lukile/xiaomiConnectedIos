@@ -32,7 +32,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="sync"/>
                     <connections>
-                        <action selector="synchronize:" destination="-1" eventType="touchUpInside" id="qyp-Vr-cmp"/>
+                        <action selector="synchronize:" destination="-1" eventType="touchUpInside" id="bZn-ZW-dR6"/>
                     </connections>
                 </button>
             </subviews>
