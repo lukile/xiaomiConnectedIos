@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DA63F1D23A8089300100C60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA63F1C23A8089300100C60 /* AppDelegate.swift */; };
+		1DA63F1F23A8089300100C60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA63F1E23A8089300100C60 /* ViewController.swift */; };
+		1DA63F2123A8089300100C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA63F2023A8089300100C60 /* Assets.xcassets */; };
+		1DA63F3123A80A3600100C60 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA63F3023A80A3600100C60 /* MyViewController.swift */; };
+		1DA63F3323A80BC100100C60 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA63F3223A80BC100100C60 /* Application.xib */; };
+		1DA63F3523A80DD300100C60 /* MyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA63F3423A80DD300100C60 /* MyView.storyboard */; };
+		1DA63F3723A8102D00100C60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA63F3623A8102D00100C60 /* main.swift */; };
+		1DA63F3A23A814E000100C60 /* MultipeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA63F3923A814E000100C60 /* MultipeerService.swift */; };
+		1DA63F3D23A8151300100C60 /* XiaomiMiBand2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA63F3C23A8151300100C60 /* XiaomiMiBand2Service.swift */; };
+		1DA63F3F23A8154E00100C60 /* XiaomiMiBand2Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA63F3E23A8154E00100C60 /* XiaomiMiBand2Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DA63F1923A8089200100C60 /* XiaomiMiBandMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaomiMiBandMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA63F1C23A8089300100C60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DA63F1E23A8089300100C60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1DA63F2023A8089300100C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DA63F2523A8089300100C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA63F2623A8089300100C60 /* XiaomiMiBandMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XiaomiMiBandMac.entitlements; sourceTree = "<group>"; };
+		1DA63F3023A80A3600100C60 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		1DA63F3223A80BC100100C60 /* Application.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
+		1DA63F3423A80DD300100C60 /* MyView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyView.storyboard; sourceTree = "<group>"; };
+		1DA63F3623A8102D00100C60 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1DA63F3923A814E000100C60 /* MultipeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerService.swift; sourceTree = "<group>"; };
+		1DA63F3C23A8151300100C60 /* XiaomiMiBand2Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiaomiMiBand2Service.swift; sourceTree = "<group>"; };
+		1DA63F3E23A8154E00100C60 /* XiaomiMiBand2Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiaomiMiBand2Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DA63F1623A8089200100C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DA63F1023A8089200100C60 = {
+			isa = PBXGroup;
+			children = (
+				1DA63F1B23A8089200100C60 /* XiaomiMiBandMac */,
+				1DA63F1A23A8089200100C60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DA63F1A23A8089200100C60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DA63F1923A8089200100C60 /* XiaomiMiBandMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DA63F1B23A8089200100C60 /* XiaomiMiBandMac */ = {
+			isa = PBXGroup;
+			children = (
+				1DA63F3B23A814F900100C60 /* Xiaomi */,
+				1DA63F3823A814C700100C60 /* MultipeerService */,
+				1DA63F1C23A8089300100C60 /* AppDelegate.swift */,
+				1DA63F3423A80DD300100C60 /* MyView.storyboard */,
+				1DA63F3223A80BC100100C60 /* Application.xib */,
+				1DA63F1E23A8089300100C60 /* ViewController.swift */,
+				1DA63F2023A8089300100C60 /* Assets.xcassets */,
+				1DA63F2523A8089300100C60 /* Info.plist */,
+				1DA63F2623A8089300100C60 /* XiaomiMiBandMac.entitlements */,
+				1DA63F3023A80A3600100C60 /* MyViewController.swift */,
+				1DA63F3623A8102D00100C60 /* main.swift */,
+			);
+			path = XiaomiMiBandMac;
+			sourceTree = "<group>";
+		};
+		1DA63F3823A814C700100C60 /* MultipeerService */ = {
+			isa = PBXGroup;
+			children = (
+				1DA63F3923A814E000100C60 /* MultipeerService.swift */,
+			);
+			path = MultipeerService;
+			sourceTree = "<group>";
+		};
+		1DA63F3B23A814F900100C60 /* Xiaomi */ = {
+			isa = PBXGroup;
+			children = (
+				1DA63F3C23A8151300100C60 /* XiaomiMiBand2Service.swift */,
+				1DA63F3E23A8154E00100C60 /* XiaomiMiBand2Constants.swift */,
+			);
+			path = Xiaomi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DA63F1823A8089200100C60 /* XiaomiMiBandMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DA63F2923A8089300100C60 /* Build configuration list for PBXNativeTarget "XiaomiMiBandMac" */;
+			buildPhases = (
+				1DA63F1523A8089200100C60 /* Sources */,
+				1DA63F1623A8089200100C60 /* Frameworks */,
+				1DA63F1723A8089200100C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XiaomiMiBandMac;
+			productName = XiaomiMiBandMac;
+			productReference = 1DA63F1923A8089200100C60 /* XiaomiMiBandMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DA63F1123A8089200100C60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Lukile;
+				TargetAttributes = {
+					1DA63F1823A8089200100C60 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1DA63F1423A8089200100C60 /* Build configuration list for PBXProject "XiaomiMiBandMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DA63F1023A8089200100C60;
+			productRefGroup = 1DA63F1A23A8089200100C60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DA63F1823A8089200100C60 /* XiaomiMiBandMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DA63F1723A8089200100C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA63F2123A8089300100C60 /* Assets.xcassets in Resources */,
+				1DA63F3523A80DD300100C60 /* MyView.storyboard in Resources */,
+				1DA63F3323A80BC100100C60 /* Application.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DA63F1523A8089200100C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA63F3F23A8154E00100C60 /* XiaomiMiBand2Constants.swift in Sources */,
+				1DA63F1F23A8089300100C60 /* ViewController.swift in Sources */,
+				1DA63F3123A80A3600100C60 /* MyViewController.swift in Sources */,
+				1DA63F3D23A8151300100C60 /* XiaomiMiBand2Service.swift in Sources */,
+				1DA63F3A23A814E000100C60 /* MultipeerService.swift in Sources */,
+				1DA63F3723A8102D00100C60 /* main.swift in Sources */,
+				1DA63F1D23A8089300100C60 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DA63F2723A8089300100C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DA63F2823A8089300100C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1DA63F2A23A8089300100C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XiaomiMiBandMac/XiaomiMiBandMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XiaomiMiBandMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pouet.XiaomiMiBandMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1DA63F2B23A8089300100C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XiaomiMiBandMac/XiaomiMiBandMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XiaomiMiBandMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pouet.XiaomiMiBandMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DA63F1423A8089200100C60 /* Build configuration list for PBXProject "XiaomiMiBandMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DA63F2723A8089300100C60 /* Debug */,
+				1DA63F2823A8089300100C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DA63F2923A8089300100C60 /* Build configuration list for PBXNativeTarget "XiaomiMiBandMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DA63F2A23A8089300100C60 /* Debug */,
+				1DA63F2B23A8089300100C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DA63F1123A8089200100C60 /* Project object */;
+}
